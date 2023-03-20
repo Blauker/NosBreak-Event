@@ -1,12 +1,10 @@
 const { Client, Intents, MessageEmbed, GuildScheduledEvent, GuildChannel } = require('discord.js');
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS ] });
 const config = require('./config.json');
 var cron = require('cron');
 
 const NosBreakSV = "1023616596226351114";
-
 const TestCH = "1024650144542621796";
-
 
 const EventCH = "959549490547814450_____NONONONONO";
 
@@ -230,16 +228,20 @@ client.on('ready', () => {
     }, null, true, 'Europe/Madrid'); lot.start();
 })
 
-client.on('messageCreate', msg => {
+client.on('messageCreate', (msg) => {
+    if (msg.author.bot) return false; 
+    
     const prefix = config.prefix;
     const args = msg.content.slice(prefix.lenght).split(/ +/);
     const preCommand = args.shift().toLowerCase();
     const command = preCommand.substring(1);
 
-    if (msg.content.startsWith(prefix)) {
-        if (msg.author.id == "266369285708840963") {
-            if (msg.startsWith(prefix)) {
+    console.log(`Message from ${msg.author.username}: ${msg.content}`);
 
+    if (msg.content.startsWith(prefix)) {
+        if (msg.author.id == "1081379574555889785"){
+            if (command == "ping"){
+                msg.channel.send("pong!");
             }
         }
     }
