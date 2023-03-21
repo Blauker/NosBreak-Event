@@ -6,7 +6,7 @@ var cron = require('cron');
 const NosBreakSV = "1023616596226351114";
 const TestCH = "1024650144542621796";
 
-const EventCH = "959549490547814450_____NONONONONO";
+const EventCH = "1087784543664218242";
 
 
 client.on('ready', () => {
@@ -14,7 +14,7 @@ client.on('ready', () => {
     client.user.setActivity('NosBreak', { type: "PLAYING" });
 
     let guild = client.guilds.cache.get(NosBreakSV);
-    let channel = guild.channels.cache.get(TestCH);
+    let channel = guild.channels.cache.get(EventCH);
 
     const wbID = "<@&1081403465017872404>";
     const penguinID = "<@&1081403745084125205>";
@@ -100,51 +100,51 @@ client.on('ready', () => {
     }, null, true, 'Europe/Madrid'); pt3.start();
 
     // INSTANT BATTLE SCHEDULE
-    var ic01 = new cron.CronJob('00 50 01 * * *', function () {
+    var ic01 = new cron.CronJob('00 55 01 * * *', function () {
         channel.send(icID);
         channel.send({ embeds: [icText] });
     }, null, true, 'Europe/Madrid'); ic01.start();
-    var ic02 = new cron.CronJob('00 50 03 * * *', function () {
+    var ic02 = new cron.CronJob('00 55 03 * * *', function () {
         channel.send(icID);
         channel.send({ embeds: [icText] });
     }, null, true, 'Europe/Madrid'); ic02.start();
-    var ic03 = new cron.CronJob('00 50 05 * * *', function () {
+    var ic03 = new cron.CronJob('00 55 05 * * *', function () {
         channel.send(icID);
         channel.send({ embeds: [icText] });
     }, null, true, 'Europe/Madrid'); ic03.start();
-    var ic04 = new cron.CronJob('00 50 07 * * *', function () {
+    var ic04 = new cron.CronJob('00 55 07 * * *', function () {
         channel.send(icID);
         channel.send({ embeds: [icText] });
     }, null, true, 'Europe/Madrid'); ic04.start();
-    var ic05 = new cron.CronJob('00 50 09 * * *', function () {
+    var ic05 = new cron.CronJob('00 55 09 * * *', function () {
         channel.send(icID);
         channel.send({ embeds: [icText] });
     }, null, true, 'Europe/Madrid'); ic05.start();
-    var ic06 = new cron.CronJob('00 50 11 * * *', function () {
+    var ic06 = new cron.CronJob('00 55 11 * * *', function () {
         channel.send(icID);
         channel.send({ embeds: [icText] });
     }, null, true, 'Europe/Madrid'); ic06.start();
-    var ic07 = new cron.CronJob('00 50 13 * * *', function () {
+    var ic07 = new cron.CronJob('00 55 13 * * *', function () {
         channel.send(icID);
         channel.send({ embeds: [icText] });
     }, null, true, 'Europe/Madrid'); ic07.start();
-    var ic08 = new cron.CronJob('00 50 15 * * *', function () {
+    var ic08 = new cron.CronJob('00 55 15 * * *', function () {
         channel.send(icID);
         channel.send({ embeds: [icText] });
     }, null, true, 'Europe/Madrid'); ic08.start();
-    var ic09 = new cron.CronJob('00 50 17 * * *', function () {
+    var ic09 = new cron.CronJob('00 55 17 * * *', function () {
         channel.send(icID);
         channel.send({ embeds: [icText] });
     }, null, true, 'Europe/Madrid'); ic09.start();
-    var ic10 = new cron.CronJob('00 50 19 * * *', function () {
+    var ic10 = new cron.CronJob('00 55 19 * * *', function () {
         channel.send(icID);
         channel.send({ embeds: [icText] });
     }, null, true, 'Europe/Madrid'); ic10.start();
-    var ic11 = new cron.CronJob('00 50 21 * * *', function () {
+    var ic11 = new cron.CronJob('00 55 21 * * *', function () {
         channel.send(icID);
         channel.send({ embeds: [icText] });
     }, null, true, 'Europe/Madrid'); ic11.start();
-    var ic12 = new cron.CronJob('00 50 23 * * *', function () {
+    var ic12 = new cron.CronJob('00 55 23 * * *', function () {
         channel.send(icID);
         channel.send({ embeds: [icText] });
     }, null, true, 'Europe/Madrid'); ic12.start();
@@ -156,70 +156,74 @@ client.on('ready', () => {
     }, null, true, 'Europe/Madrid'); aot.start();
 
     // CALIGOR SCHEDULE
-    var cali1 = new cron.CronJob('00 55 02 * * *', function () {
+    var cali1 = new cron.CronJob('00 25 03 * * *', function () {
         channel.send(caliID);
         channel.send({ embeds: [caliText] });
     }, null, true, 'Europe/Madrid'); cali1.start();
-    var cali2 = new cron.CronJob('00 55 05 * * *', function () {
+    var cali2 = new cron.CronJob('00 25 06 * * *', function () {
         channel.send(caliID);
         channel.send({ embeds: [caliText] });
     }, null, true, 'Europe/Madrid'); cali2.start();
-    var cali3 = new cron.CronJob('00 55 08 * * *', function () {
+    var cali3 = new cron.CronJob('00 25 09 * * *', function () {
         channel.send(caliID);
         channel.send({ embeds: [caliText] });
     }, null, true, 'Europe/Madrid'); cali3.start();
-    var cali4 = new cron.CronJob('00 55 15 * * *', function () {
+    var cali4 = new cron.CronJob('00 25 13 * * *', function () {
         channel.send(caliID);
         channel.send({ embeds: [caliText] });
     }, null, true, 'Europe/Madrid'); cali4.start();
-    var cali5 = new cron.CronJob('00 55 19 * * *', function () {
+    var cali5 = new cron.CronJob('00 25 16 * * *', function () {
         channel.send(caliID);
         channel.send({ embeds: [caliText] });
     }, null, true, 'Europe/Madrid'); cali5.start();
-    var cali6 = new cron.CronJob('00 25 00 * * *', function () {
+    var cali6 = new cron.CronJob('00 25 20 * * *', function () {
         channel.send(caliID);
         channel.send({ embeds: [caliText] });
     }, null, true, 'Europe/Madrid'); cali6.start();
+    var cali7 = new cron.CronJob('00 25 23 * * *', function () {
+        channel.send(caliID);
+        channel.send({ embeds: [caliText] });
+    }, null, true, 'Europe/Madrid'); cali7.start();
 
     // BATTLE ROYALE SCHEDULE
-    var br1 = new cron.CronJob('00 05 12 * * *', function () {
+    var br1 = new cron.CronJob('00 25 01 * * *', function () {
         channel.send(brID);
         channel.send({ embeds: [brText] });
     }, null, true, 'Europe/Madrid'); br1.start();
-    var br2 = new cron.CronJob('00 05 18 * * *', function () {
+    var br2 = new cron.CronJob('00 25 05 * * *', function () {
         channel.send(brID);
         channel.send({ embeds: [brText] });
     }, null, true, 'Europe/Madrid'); br2.start();
-    var br3 = new cron.CronJob('00 05 19 * * *', function () {
+    var br3 = new cron.CronJob('00 25 12 * * *', function () {
         channel.send(brID);
         channel.send({ embeds: [brText] });
     }, null, true, 'Europe/Madrid'); br3.start();
-    var br4 = new cron.CronJob('00 05 21 * * *', function () {
+    var br4 = new cron.CronJob('00 25 17 * * *', function () {
         channel.send(brID);
         channel.send({ embeds: [brText] });
     }, null, true, 'Europe/Madrid'); br4.start();
-    var br5 = new cron.CronJob('00 05 22 * * *', function () {
+    var br5 = new cron.CronJob('00 25 21 * * *', function () {
         channel.send(brID);
         channel.send({ embeds: [brText] });
     }, null, true, 'Europe/Madrid'); br5.start();
-    var br6 = new cron.CronJob('00 05 23 * * *', function () {
-        channel.send(brID);
-        channel.send({ embeds: [brText] });
-    }, null, true, 'Europe/Madrid'); br6.start();
-    var br7 = new cron.CronJob('00 05 00 * * *', function () {
-        channel.send(brID);
-        channel.send({ embeds: [brText] });
-    }, null, true, 'Europe/Madrid'); br7.start();
 
     // RAINBOW BATTLE SCHEDULE
-    var rbb1 = new cron.CronJob('00 35 18 * * *', function () {
+    var rbb1 = new cron.CronJob('00 25 00 * * *', function () {
         channel.send(rbbID);
         channel.send({ embeds: [rbbText] });
     }, null, true, 'Europe/Madrid'); rbb1.start();
-    var rbb2 = new cron.CronJob('00 05 20 * * *', function () {
+    var rbb2 = new cron.CronJob('00 25 11 * * *', function () {
         channel.send(rbbID);
         channel.send({ embeds: [rbbText] });
     }, null, true, 'Europe/Madrid'); rbb2.start();
+    var rbb3 = new cron.CronJob('00 25 14 * * *', function () {
+        channel.send(rbbID);
+        channel.send({ embeds: [rbbText] });
+    }, null, true, 'Europe/Madrid'); rbb3.start();
+    var rbb4 = new cron.CronJob('00 25 18 * * *', function () {
+        channel.send(rbbID);
+        channel.send({ embeds: [rbbText] });
+    }, null, true, 'Europe/Madrid'); rbb4.start();
 
     // LOTTERY SCHEDULE
     var lot = new cron.CronJob('00 25 19 * * *', function () {
@@ -242,6 +246,9 @@ client.on('messageCreate', (msg) => {
         if (msg.author.id == "1081379574555889785"){
             if (command == "ping"){
                 msg.channel.send("pong!");
+            }
+            if (command == "schedules"){
+                msg.channel.send("Updated!");
             }
         }
     }
