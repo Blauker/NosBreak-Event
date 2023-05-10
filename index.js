@@ -243,13 +243,8 @@ client.on('messageCreate', (msg) => {
     console.log(`Message from ${msg.author.username}: ${msg.content}`);
 
     if (msg.content.startsWith(prefix)) {
-        if (msg.author.id == "1081379574555889785"){
-            if (command == "ping"){
-                msg.channel.send("pong!");
-            }
-            if (command == "schedules"){
-                msg.channel.send("Updated!");
-            }
+        if (command == "ping"){
+            msg.channel.send("pong!");
         }
     }
 })
